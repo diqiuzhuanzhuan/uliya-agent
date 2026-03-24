@@ -1,0 +1,25 @@
+[project]
+name = "uliya-agent-backend"
+version = "0.1.0"
+description = "Universal Agent Web App backend powered by FastAPI and a Deep Agents style runtime."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "pydantic-settings>=2.6.0",
+  "sqlalchemy>=2.0.0",
+  "greenlet>=3.0.0",
+  "aiosqlite>=0.20.0",
+  "python-dotenv>=1.0.1",
+  "python-multipart>=0.0.20",
+  "socksio>=1.0.0",
+  "deepagents>=0.4.10",
+  "langchain-openai>=0.3.0",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
